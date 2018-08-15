@@ -102,17 +102,21 @@
 
 
 
-  <meta name="description" content="一个人有梦想，就要努力实现">
-<meta property="og:type" content="website">
-<meta property="og:title" content="天涯博客（陈传焱）">
-<meta property="og:url" content="seayxu.github.io/index.html">
+  <meta name="description" content="终端打印、算术运算、常用变量s  终端打印 echo printf 在echo中转义换行符 打印彩色输出   算术运算 整数运算 精密计算   常用变量 用户自定义变量 环境变量 位置变量 预定义变量    #!称为 shebang cmd1 ; cmd2执行cmd1后在执行cmd2 终端打印echo123echo hello worldecho &amp;apos;hello world&amp;apos;e">
+<meta name="keywords" content="shell">
+<meta property="og:type" content="article">
+<meta property="og:title" content="shell脚本初识">
+<meta property="og:url" content="seayxu.github.io/2018/08/15/title/index.html">
 <meta property="og:site_name" content="天涯博客（陈传焱）">
-<meta property="og:description" content="一个人有梦想，就要努力实现">
+<meta property="og:description" content="终端打印、算术运算、常用变量s  终端打印 echo printf 在echo中转义换行符 打印彩色输出   算术运算 整数运算 精密计算   常用变量 用户自定义变量 环境变量 位置变量 预定义变量    #!称为 shebang cmd1 ; cmd2执行cmd1后在执行cmd2 终端打印echo123echo hello worldecho &amp;apos;hello world&amp;apos;e">
 <meta property="og:locale" content="zh-cn">
+<meta property="og:updated_time" content="2018-08-15T13:23:54.583Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="天涯博客（陈传焱）">
-<meta name="twitter:description" content="一个人有梦想，就要努力实现">
+<meta name="twitter:title" content="shell脚本初识">
+<meta name="twitter:description" content="终端打印、算术运算、常用变量s  终端打印 echo printf 在echo中转义换行符 打印彩色输出   算术运算 整数运算 精密计算   常用变量 用户自定义变量 环境变量 位置变量 预定义变量    #!称为 shebang cmd1 ; cmd2执行cmd1后在执行cmd2 终端打印echo123echo hello worldecho &amp;apos;hello world&amp;apos;e">
 
+
+  
 
 
   <link rel="alternate" href="/atom.xml" title="天涯博客（陈传焱）" type="application/atom+xml" />
@@ -120,7 +124,7 @@
 
 
 
-  <link rel="canonical" href="seayxu.github.io/"/>
+  <link rel="canonical" href="seayxu.github.io/2018/08/15/title/"/>
 
 
 
@@ -130,7 +134,7 @@
   };
 </script>
 
-  <title>天涯博客（陈传焱）</title>
+  <title>shell脚本初识 | 天涯博客（陈传焱）</title>
   
 
 
@@ -177,8 +181,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
       <a href="https://github.com/you"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_white_ffffff.png" alt="Fork me on GitHub"></a>
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -219,7 +222,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
     <a href="/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Startseite</a>
   </li>
@@ -255,9 +258,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -289,11 +292,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/08/15/title/" itemprop="url">
-                  shell脚本初识
-                </a>
+          <h1 class="post-title" itemprop="name headline">shell脚本初识
               
             
           </h1>
@@ -352,6 +351,12 @@
     
     <div>
      
+     <div>
+
+    <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+
+</div>
+     
      </div>
     <div class="post-body" itemprop="articleBody">
 
@@ -359,9 +364,7 @@
       
 
       
-        
-          
-            <p> 终端打印、算术运算、常用变量s</p>
+        <p> 终端打印、算术运算、常用变量s</p>
 <ul>
 <li>终端打印<ul>
 <li><a href="http://man.linuxde.net/shell-script/shell-1#echo" target="_blank" rel="noopener">echo</a></li>
@@ -519,8 +522,6 @@
 <li>$0 ：当前执行的进程/程序名</li>
 </ul>
 
-          
-        
       
     </div>
 
@@ -533,170 +534,70 @@
     
 
     
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>打赏2元，谢谢！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>Donate</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="jhon chen WeChat Pay"/>
+        <p>WeChat Pay</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.png" alt="jhon chen Alipay"/>
+        <p>Alipay</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
 
     
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="seayxu.github.io/2018/08/15/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="jhon chen">
-      <meta itemprop="description" content="一个人有梦想，就要努力实现">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="天涯博客（陈传焱）">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/08/15/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2018-08-15 13:53:26 / Updated at: 19:42:45" itemprop="dateCreated datePublished" datetime="2018-08-15T13:53:26+08:00">2018-08-15</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/shell/" rel="tag"># shell</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div>
-     
-     </div>
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/08/15/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
       
     </footer>
   </div>
@@ -706,14 +607,15 @@
   </article>
 
 
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -734,8 +636,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Übersicht
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -800,6 +711,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#终端打印"><span class="nav-number">1.</span> <span class="nav-text">终端打印</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#echo"><span class="nav-number">1.1.</span> <span class="nav-text">echo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#printf"><span class="nav-number">1.2.</span> <span class="nav-text">printf</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在echo中转义换行符"><span class="nav-number">1.3.</span> <span class="nav-text">在echo中转义换行符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#打印彩色输出"><span class="nav-number">1.4.</span> <span class="nav-text">打印彩色输出</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#算术运算"><span class="nav-number">2.</span> <span class="nav-text">算术运算</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#整数运算"><span class="nav-number">2.1.</span> <span class="nav-text">整数运算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#精密计算"><span class="nav-number">2.2.</span> <span class="nav-text">精密计算</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用变量"><span class="nav-number">3.</span> <span class="nav-text">常用变量</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#用户自定义变量"><span class="nav-number">3.1.</span> <span class="nav-text">用户自定义变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#环境变量"><span class="nav-number">3.2.</span> <span class="nav-text">环境变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#位置变量"><span class="nav-number">3.3.</span> <span class="nav-text">位置变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#预定义变量"><span class="nav-number">3.4.</span> <span class="nav-text">预定义变量</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -937,6 +864,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.4.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.4.0"></script>
+
+
 
   
 
